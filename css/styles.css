@@ -1,0 +1,212 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3%;
+}
+
+.logo {
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30.52px;
+  line-height: 31px;
+}
+
+.logo-blue {
+  color: #2196f3;
+}
+
+a:link,
+a:visited {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #212121;
+  letter-spacing: 2%;
+  text-decoration: none;
+}
+
+/*nie działa mi a:active z przyczyn zupełnie dla mnie nieznanych*/
+a:hover,
+a:active,
+a:focus {
+  color: #2196f3;
+}
+
+.contact-links a:link,
+.contact-links a:visited {
+  color: #757575;
+}
+
+.contact-links a:hover,
+.contact-links a:active,
+.contact-links a:focus {
+  color: #2196f3;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.banner {
+  background-color: #2f303a;
+  text-align: center;
+  height: 600px;
+}
+
+.slogan {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 6%;
+}
+
+.order-button {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #2196f3;
+  border: #2196f3;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  letter-spacing: 6%;
+  border-radius: 4px;
+}
+
+.main-info h4 {
+  color: #212121;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.main-info p {
+  color: #757575;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.what-we-do h2 {
+  color: #212121;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: top;
+}
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team h2 {
+  color: #212121;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: top;
+}
+
+.team h3 {
+  color: #212121;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: top;
+}
+
+.team p {
+  color: #757575;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: top;
+}
+
+.team li {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #2f303a;
+  height: 252px;
+}
+
+.logo-footer {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30.52px;
+  line-height: 31px;
+}
+
+address {
+  font-style: normal;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+footer a:link {
+  color: #ffffff99;
+}
+
+.portfolio-buttons button {
+  background-color: #f5f4fa;
+  color: #212121;
+  border-radius: 4px;
+  height: 38px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.portfolio-buttons button:hover {
+  background-color: #2196f3;
+  color: #fff;
+  border-radius: 4px;
+  height: 38px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.portfolio-display h3 {
+  color: #212121;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: 6%;
+}
+
+.portfolio-display p {
+  color: #757575;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: left;
+  vertical-align: top;
+}
+
+.portfolio-display li {
+  border: 1px solid #eeeeee;
+  border-radius: 1px;
+}
