@@ -1,48 +1,63 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 3%;
-  cursor: pointer;
+:root {
+  --white: #fff;
+  --dark-grey: #212121;
+  --light-grey: #757575;
+  --blue: #2196f3;
+  --gunmetal: #2f303a;
+  --complementary: #f5f4fa;
 }
 
-.logo {
-  color: #000000;
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo,
+.logo a:link,
+.logo a:visited {
+  color: #000;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 30.52px;
-  line-height: 31px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .logo-blue {
-  color: #2196f3;
+  color: var(--blue);
 }
 
-a:link,
-a:visited {
+.nav-links a:link,
+.nav-links a:visited {
   font-size: 14px;
   font-weight: 500;
-  line-height: 16px;
-  color: #212121;
-  letter-spacing: 2%;
+  line-height: 1.14;
+  color: var(--dark-grey);
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
 
 /*nie działa a:active z przyczyn zupełnie dla mnie nieznanych :D */
-a:hover,
-a:focus,
-a:active {
-  color: #2196f3;
+.nav-links a:hover,
+.nav-links a:focus,
+.nav-links a:active {
+  color: var(--blue);
 }
 
 .contact-links a:link,
 .contact-links a:visited {
-  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--light-grey);
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .contact-links a:hover,
 .contact-links a:active,
 .contact-links a:focus {
-  color: #2196f3;
+  color: var(--blue);
 }
 
 ul {
@@ -50,93 +65,97 @@ ul {
 }
 
 .banner {
-  background-color: #2f303a;
+  background-color: var(--gunmetal);
   text-align: center;
-  height: 600px;
 }
 
 .slogan {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  color: #fff;
+  line-height: 1.36;
+  color: var(--white);
   text-transform: uppercase;
   text-align: center;
   vertical-align: top;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 
 .order-button {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   font-weight: 700;
-  color: #fff;
-  background-color: #2196f3;
-  border: #2196f3;
-  height: 50px;
-  width: 200px;
+  color: var(--white);
+  background-color: var(--blue);
+  border: var(--blue);
   text-align: center;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
   border-radius: 4px;
+  cursor: pointer;
 }
 
-.main-info h4 {
-  color: #212121;
+.main-info-header {
+  color: var(--dark-grey);
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
-.main-info p {
-  color: #757575;
+.main-info-paragraph {
+  color: var(--light-grey);
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   font-weight: 400;
+  letter-spacing: 0.03em;
 }
 
-.what-we-do h2 {
-  color: #212121;
+.mission-header {
+  color: var(--dark-grey);
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   font-weight: 700;
   text-align: center;
   vertical-align: top;
+  letter-spacing: 0.03em;
 }
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--complementary);
 }
 
-.team h2 {
-  color: #212121;
+.team-header {
+  color: var(--dark-grey);
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   font-weight: 700;
   text-align: center;
   vertical-align: top;
+  letter-spacing: 0.03em;
 }
 
-.team h3 {
-  color: #212121;
+.team-name {
+  color: var(--dark-grey);
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.9;
   font-weight: 500;
   text-align: center;
   vertical-align: top;
+  letter-spacing: 0.03em;
 }
 
-.team p {
-  color: #757575;
+.team-position {
+  color: var(--light-grey);
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.9;
   font-weight: 400;
   text-align: center;
   vertical-align: top;
+  letter-spacing: 0.03em;
 }
 
-.team li {
-  background-color: #fff;
+.team-frame {
+  background-color: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -144,76 +163,86 @@ ul {
 }
 
 footer {
-  background-color: #2f303a;
-  height: 252px;
+  background-color: var(--gunmetal);
 }
 
-.logo-footer {
-  color: #fff;
+.logo-footer,
+.logo-footer a:link,
+.logo-footer a:visited {
+  color: var(--white);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 30.52px;
-  line-height: 31px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 address {
   font-style: normal;
-  color: #fff;
+  color: var(--white);
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
-footer a:link {
-  color: #ffffff99;
+address a:link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 
-.portfolio-buttons button {
-  background-color: #f5f4fa;
-  color: #212121;
+.portfolio-button {
+  background-color: var(--complementary);
+  color: var(--dark-grey);
   border: none;
   border-radius: 4px;
-  height: 38px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
-.portfolio-buttons button:hover {
-  background-color: #2196f3;
-  color: #fff;
+.portfolio-button:hover {
+  background-color: var(--blue);
+  color: var(--white);
   border: none;
   border-radius: 4px;
-  height: 38px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-display h3 {
-  color: #212121;
+.portfolio-header {
+  color: var(--dark-grey);
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   font-weight: 700;
   text-align: left;
   vertical-align: top;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 
-.portfolio-display p {
-  color: #757575;
+.portfolio-product {
+  color: var(--light-grey);
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9;
   font-weight: 400;
   text-align: left;
   vertical-align: top;
+  letter-spacing: 0.03em;
 }
 
-.portfolio-display li {
-  border: 1px solid #eeeeee;
+.portfolio-display {
+  border: 1px solid #eee;
   border-radius: 1px;
+}
+
+.odd-link {
+  text-decoration: underline rgba(255, 255, 255, 0.6);
 }
